@@ -1,3 +1,6 @@
 {
+    "usingComponents": {
+        "searchinput": "/components/SearchInput/SearchInput"
+    },
     "navigationBarTitleText": "乐购商场"
 }

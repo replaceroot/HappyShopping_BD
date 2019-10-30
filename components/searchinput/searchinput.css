@@ -1,0 +1,15 @@
+@import "../../styles/common.css";
+.search-input {
+  background-color: #eb4450;
+  padding: 10rpx 20rpx;
+  height: 90rpx;
+}
+.search-input .search-navigator {
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,16 @@
+/* 项目全局样式文件 */
+@import "./iconfont.css";
+
+page,view,navigator,text,swiper,swiper-item,rich-text,button,input,image {
+  box-sizing: border-box;
+}
+
+image{
+  width: 100%;
+}
+page{
+  /* CSS变量定义主题颜色 */
+  --themeColor: #eb4450;
+  font-size: 28rpx;
+  color: #666;
+}
