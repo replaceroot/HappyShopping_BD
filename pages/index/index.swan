@@ -1,1 +1,12 @@
 <searchinput></searchinput>
+<!-- 轮播图部分 start -->
+<view class="index-swiper">
+    <swiper class="swiper" indicator-dots autoplay circular>
+        <swiper-item s-for="swiperList">
+            <navigator>
+                <image class="swiper-img" src="{{item.image_src}}" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 轮播图部分 end -->
