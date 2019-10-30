@@ -10,3 +10,13 @@
     </swiper>
 </view>
 <!-- 轮播图部分 end -->
+
+<!-- 分类导航部分 start -->
+<view class="index-nav-cate">
+    <block s-for="{{navCateList}}">
+        <navigator url="" class="nav-cate-item">
+            <image class="nav-cate-img" src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+    </block>
+</view>
+<!-- 分类导航部分 end -->

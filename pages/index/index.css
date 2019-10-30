@@ -1,7 +1,27 @@
-.index-swiper .swiper{
+/* 轮播图部分 start */
+
+.index-swiper .swiper {
   height: 340rpx;
 }
 
 .index-swiper .swiper .swiper-img {
   width: 100%;
 }
+
+/* 轮播图部分 end */
+
+/* 分类导航部分 start */
+.index-nav-cate {
+  display: flex;
+}
+
+.index-nav-cate .nav-cate-item{
+  flex: 1;
+  padding: 14rpx 14rpx 14rpx 20rpx;
+}
+
+.nav-cate-img {
+  width: 90%;  
+}
+
+/* 分类导航部分 end */
