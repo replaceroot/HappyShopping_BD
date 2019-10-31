@@ -25,6 +25,7 @@ export const request = params => {
       complete: () => {
         swan.hideLoading();
       }
+
     });
   });
 };

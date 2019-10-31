@@ -1,5 +1,4 @@
 /* 轮播图部分 start */
-
 .index-swiper .swiper {
   height: 340rpx;
 }
@@ -15,13 +14,56 @@
   display: flex;
 }
 
-.index-nav-cate .nav-cate-item{
+.index-nav-cate .nav-cate-item {
   flex: 1;
   padding: 14rpx 14rpx 14rpx 20rpx;
 }
 
 .nav-cate-img {
-  width: 90%;  
+  width: 90%;
 }
 
 /* 分类导航部分 end */
+
+/* 商品楼层部分 start */
+.index-floor .floor-item .floor-title {
+  padding: 20rpx 10rpx 0rpx 10rpx;
+}
+
+.index-floor .floor-item {
+  box-sizing: border-box;
+}
+
+.floor-content {
+  overflow: hidden;
+}
+
+.floor-content .goods-item {
+  float: left;
+  width: 33%;
+}
+
+.floor-content .goods-item .goods-item-img {
+  width: 100%;
+}
+
+.floor-content .goods-item:nth-last-child(-n + 4) {
+  /* 
+    原图片的宽度 / 原图片的高度 = 变化后的宽度 /  变化后的高度
+    232 / 386 = (750rpx / 3) / * ?
+    小图的高度 = 750rpx / 3 * 386 / 232 / 2
+  */
+  box-sizing: border-box;
+  height: 207.97rpx;
+  border-left: 10rpx solid #ffffff;
+}
+
+.floor-content .goods-item:nth-last-child(-n + 2) {
+  box-sizing: border-box;
+  border-top: 10rpx solid #ffffff;
+}
+
+.floor-content .goods-item:nth-last-child(-n + 4) .goods-item-img {
+  height: 100%;
+}
+/* 商品楼层部分 end */

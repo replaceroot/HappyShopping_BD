@@ -9,11 +9,15 @@ Page({
     // 轮播图数据列表
     swiperList: [],
     // 分类导航数据列表
-    navCateList: []
+    navCateList: [],
+
+    // 楼层数据列表
+    floorList: []
   },
   onLoad() {
     this.getSwiperList();
     this.getNavCateList();
+    this.getFloorList();
   },
   // 获取轮播图数据方法
   getSwiperList() {
@@ -35,6 +39,18 @@ Page({
       let navCateList = res;
       this.setData({
         navCateList
+      });
+    });
+  },
+
+  // 获取楼层数据列表
+  getFloorList() {
+    request({
+      url: "/home/floordata"
+    }).then(res => {
+      let floorList = res;
+      this.setData({
+        floorList
       });
     });
   }
