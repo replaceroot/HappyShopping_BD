@@ -1,4 +1,5 @@
 export const request = params => {
+  
   swan.showLoading({
     title: "玩命加载中...",
     mask: true
@@ -8,7 +9,7 @@ export const request = params => {
   return new Promise((reslove, reject) => {
     swan.request({
       // 解构params参数
-      ...params,
+      // ...params,
       url: baseUrl + params.url,
       success: result => {
         //  调用回调函数返回数据

@@ -1,0 +1,33 @@
+<searchinput />
+<view class="category-wrap">
+	<!-- 左侧菜单部分 start -->
+	<scroll-view scroll-y="true" class="menu-left">
+		<view class="menu-left-wrap">
+			<navigator bindtap="handleItemClick" data-index="{{index1}}" class="menu-left-text {{index1===currentIndex?' on':''}}" url="" s-for="leftList"
+				s-for-item="item1" s-for-index="index1">{{item1}}</navigator>
+		</view>
+	</scroll-view>
+	<!-- 左侧菜单部分 end -->
+
+	<!-- 右侧菜单部分 start -->
+	<scroll-view scroll-y="true" class="menu-right">
+		<view class="menu-right-wrap">
+      <view class="menu-right-item" s-for="rightList" s-for-item="item2" s-for-index="index2">
+				<view class="menu-right-title">
+					<text class="symbol">[</text>
+					{{item2.cat_name}}
+					<text class="symbol">]</text>
+				</view>
+				<view class="menu-right-content">
+					<block s-for="item2.children" s-for-item="item3" s-for-index="index3">
+						<navigator class="goods-item" url="">
+							<image class="goods-image" src="{{item3.cat_icon}}" mode="widthFix"></image>
+							<text selectable="true" class="goods-name">{{item3.cat_name}}</text>
+						</navigator>
+					</block>
+				</view>
+		</view>
+</view>
+</scroll-view>
+<!-- 右侧菜单部分 end -->
+</view>

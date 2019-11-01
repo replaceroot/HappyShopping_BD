@@ -1,0 +1,72 @@
+@import '../../styles/common.css';
+
+.category-wrap {
+  margin-top: 20rpx;
+  display: flex;
+}
+
+/* 商品列表左侧部分 start */
+.category-wrap  .menu-left{
+  display: flex;
+  flex: 2;
+  height: 100vh;
+}
+
+.category-wrap  .menu-left .menu-left-wrap .menu-left-text{
+  display: flex;
+  flex-direction: column;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.on {
+  border-left: 4rpx solid var(--themeColor);
+}
+
+.category-wrap  .menu-right {
+  flex: 5;
+}
+
+/* 商品列表左侧部分 end */
+
+
+/* 商品列表右侧部分start */
+.category-wrap .menu-right .menu-right-wrap {
+  height: 100vh;
+}
+
+.category-wrap .menu-right .menu-right-item .menu-right-title {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+
+.category-wrap .menu-right .menu-right-item .menu-right-title .symbol {
+  padding: 0rpx 20rpx;
+  color: lightpink;
+}
+
+.category-wrap .menu-right .menu-right-content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.menu-right-content .goods-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  padding: 10rpx;
+  
+}
+
+.menu-right-content .goods-item .goods-image{
+  width: 60%;
+}
+/* 商品列表右侧部分end */
